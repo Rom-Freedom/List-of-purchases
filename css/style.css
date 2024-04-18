@@ -1,6 +1,73 @@
-.app {
-    padding: 15px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
 }
+
+body {
+    background-color: #909df0;
+    margin: 0;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.app {
+    margin: 0 auto;
+    padding: 15px 30px;
+    width: 500px;
+    height: auto;
+    background-color: #d2d1d1;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.app form {
+  margin-top: 30px;
+}
+
+.app form input {
+    padding: 10px 15px;
+    width: 300px;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.app form input:hover {
+    background-color: #8ff2ef;
+    transition: .5s ease;
+}
+
+.app form button {
+    background-color: #2641f2da;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.total-orlist {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.total-list {
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.total-div {
+    border-bottom: 1px solid tomato;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
 
 .list-enter-active,
 .list-leave-active {

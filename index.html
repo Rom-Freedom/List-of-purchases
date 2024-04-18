@@ -11,22 +11,22 @@
 </head>
 <body>
     <div id="app" class="app">
-        <form v-on:submit="addProduct">
+        <form class="form" v-on:submit="addProduct">
             <input type="text" v-model="title" placeholder="Product name">
             <input type="number" v-model="price" placeholder="Price">
             <input type="number" v-model="count" placeholder="Amount">
             <button>Add</button>
         </form>
-        <ol>
+        <ol class="total-orlist">
             <transition-group name="list">
-                <li v-for="product in sortOrder" :key="product.id">
+                <li class="total-list" v-for="product in sortOrder" :key="product.id">
                     {{ product.title }}
                     <strong>price: </strong> {{ product.price }},
                     <strong>count: </strong> {{ product.count }}
                 </li>
             </transition-group>
         </ol>
-        <div v-if="totalPrice > 0">
+        <div class="total-div"v-if="totalPrice > 0">
             Cost of purchase: <strong>{{ totalPrice }}</strong>
         </div>
     </div>

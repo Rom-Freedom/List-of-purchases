@@ -21,12 +21,7 @@
    * Remove the margin in all browsers.
    */
   
-  body {
-    background-color: #fff;
-    margin: 0;
-    padding: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  
   
   /**
    * Render the `main` element consistently in IE.
